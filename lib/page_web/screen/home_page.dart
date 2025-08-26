@@ -3,7 +3,9 @@ import 'package:beca_mext/page_web/screen/disen.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final void Function(Locale locale) cambiarIdioma;
+
+  const HomePage({super.key, required this.cambiarIdioma});
 
   @override
   Widget build(BuildContext context) {
@@ -19,18 +21,7 @@ class HomePage extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        bottom: screen.width() > 700
-            ? PreferredSize(
-                preferredSize: Size.fromHeight(50),
-                child: Container(color: const Color.fromARGB(255, 30, 62, 88)),
-              )
-            : PreferredSize(
-                preferredSize: Size.fromHeight(10),
-                child: Container(
-                  color: const Color.fromARGB(255, 30, 62, 88),
-                  height: 5,
-                ),
-              ),
+
         flexibleSpace: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
