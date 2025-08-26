@@ -22,35 +22,7 @@ class HomePage extends StatelessWidget {
         bottom: screen.width() > 700
             ? PreferredSize(
                 preferredSize: Size.fromHeight(50),
-                child: Container(
-                  color: const Color.fromARGB(255, 30, 62, 88),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "Prueba",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "Prueba",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "Prueba",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                child: Container(color: const Color.fromARGB(255, 30, 62, 88)),
               )
             : PreferredSize(
                 preferredSize: Size.fromHeight(10),
